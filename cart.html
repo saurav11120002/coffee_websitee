@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav containers">
+            <a href="" class="logo">Shopping</a>
+
+            <!-- Search bar added -->
+            <input type="text" id="search-input" placeholder="Search for products..." onkeyup="searchProducts()" />
+
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop containers">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content" id="product-list">
+            <div class="product-box">
+                <img src="images/cc.jpeg" alt="Frappucino" class="product-img"/>
+                <h2 class="product-title">Frappucino</h2>
+                <span class="price">400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/ca.jpeg" alt="CAFFE AMERICANO" class="product-img"/>
+                <h2 class="product-title">CAFFE AMERICANO</h2>
+                <span class="price">200</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/a.jpeg" alt="COLD COFFEE" class="product-img"/>
+                <h2 class="product-title">COLD COFFEE</h2>
+                <span class="price">300</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/lo.jpg" alt="CAPPUCCINO" class="product-img"/>
+                <h2 class="product-title">CAPPUCCINO</h2>
+                <span class="price">450</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/bg.jpg" alt="DOUBLE CHOCOLATE CHIP COOKIE" class="product-img"/>
+                <h2 class="product-title">DOUBLE CHOCOLATE CHIP COOKIE</h2>
+                <span class="price">500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/3-3.jpg" alt="CREAMY SPINACH AND CORN POCKET" class="product-img"/>
+                <h2 class="product-title">CREAMY SPINACH AND CORN POCKET</h2>
+                <span class="price">200</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/2.jpeg" alt="Java Chip Frappucino" class="product-img"/>
+                <h2 class="product-title">Java Chip Frappucino</h2>
+                <span class="price">450</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="images/5.jpeg" alt="CHEESY CORN POCKET" class="product-img"/>
+                <h2 class="product-title">CHEESY CORN POCKET</h2>
+                <span class="price">300</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Search functionality for products
+        function searchProducts() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let productList = document.getElementById('product-list');
+            let products = productList.getElementsByClassName('product-box');
+
+            for (let i = 0; i < products.length; i++) {
+                let title = products[i].getElementsByClassName('product-title')[0];
+                if (title.innerText.toLowerCase().indexOf(input) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

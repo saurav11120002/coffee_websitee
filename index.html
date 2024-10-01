@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ <div class="navbar">
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="">
+    </div>
+    <ul class="navlist">
+        <li id="nav1"><a href="#home">Home</a></li>
+        <li id="nav2"><a href="#about-us">About Us</a></li>
+        <li id="nav4"><a href="#customers">Customers</a></li>
+        <li id="nav5"><a href="#contacts">Contact    </a></li>
+        <div class="slider"></div>
+    </ul>
+ </div>   
+ <section class="hero" id="home">
+    <div class="hero_split left">
+        <div class="content">
+            <h1>Brew Time</h1>
+            <p>It's more than a drink; it's a ritual, an art form. From bean to brew, each step is a symphony of aroma and anticipation. Coffee isn't just fuel; it's inspiration in a cup, unlocking creativity and signaling the start of something new with every rich, invigorating taste.</p>
+            <a href="http://localhost:3000/log" class="button-as-link">Shop</a>
+        </div>
+
+    </div>
+    <div class="middle">
+        
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+    </div>
+    <div class="hero_split right">
+<img src="images/90.jpg" alt="">
+    </div>
+ </section>
+
+
+ <section class="about-us" id="about-us">
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>Welcome to our coffee heaven, where every bean tells a story and every cup ignites a journey. At [Coffee Haven], we're more than just purveyors of caffeine; we're cultivators of community, enthusiasts of flavor, and stewards of quality. Our passion for coffee extends beyond the brew; it's a commitment to sourcing the finest beans from around the globe, nurturing relationships with farmers who share our dedication to sustainability and excellence.</p>
+        </div>
+        <div class="contained">
+            <section class="about">
+                <div class="about-image">
+                    <img src="images/6.jpg" alt="">
+                </div>
+                <div class="about-content">
+                    <h2>Warm Embrace in a Cup</h2>
+                    <p>Here, coffee isn't just a drink; it's an experience—a moment of solace in a bustling world, a catalyst for conversation and connection. Whether you're a connoisseur seeking the perfect roast or a curious newcomer eager to explore the vast world of coffee, we're here to guide you on your journey.</p>
+                    <a href="" class="read-more">Read More</a>
+                </div>
+            </section>
+        </div>
+ </section>
+ 
+ <section class="customers" id="customers">
+    <div class="customers-heading">
+        <h2>Our Customers</h2>
+    </div>
+    <div class="customers-container">
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>  
+            </div>
+            <h3>"Morning Must-Have"</h3>
+            <p> "I can't imagine starting my day without a cup of [Brand Name] coffee. Its smoothness and richness set the perfect tone for the day ahead. Plus, knowing that it's ethically sourced makes each sip even more satisfying. It's not just a beverage; it's a moment of pure enjoyment."</p>
+                <h2>Ema </h2>
+                <img src="images/14.jpg" alt="">
+        </div>
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+            </div>
+            <h3>"Rich Aroma and Bold Flavor"</h3>
+            <p> I've been using XYZ Coffee Powder for months now, and I can't get enough of its rich aroma and bold flavor. It's the perfect way to start my mornings, giving me that extra boost of energy I need to kickstart my day. The packaging is convenient and keeps the coffee fresh for longer. Highly recommended for all coffee lovers out there!</p>
+                <h2>John Watson</h2>
+                <img src="images/12.jpg" alt="">
+        </div>
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h3>"Unmatched Quality"</h3>
+            <p>"Discovering [Brand Name] coffee powder was a game-changer for me. The taste is simply unparalleled, boasting a rich flavor and aroma that surpasses any other brand I've tried. From the first sip to the last, it's a journey of pure coffee bliss."</p>
+                <h2>Sarah William</h2>
+                <img src="images/13.jpg" alt="">
+        </div>
+    </div>
+    <div class="leave">
+        <form id="reviewForm">
+            <label for="review">LEAVE A REVIEW:</label>
+            <input type="text" id="review" name="review" required>
+            <br>
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">RATING:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="reviews">
+        <h2>New Reviews</h2>
+        <ul id="reviews-list"></ul>
+    </div>
+</section>
+
+
+<section class='footer' id="contacts">
+    <div class="footer-box">
+        <h2>Coffee Haven</h2>
+        <p>Welcome to our abode of frangrance and aroma of brewing</p>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin-square'></i></a>
+
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="">Products</a></li>
+        <li><a href="">Help and Support</a></li>
+        <li><a href="">Return Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+        <li><a href="">Products</a></li>
+        
+    </div>
+    <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="">Features</a></li>
+        <li><a href="">Blog Post</a></li>
+        <li><a href="">Our Branches</a></li>
+        <li><a href="">Careers</a></li>  
+    </div>
+    <div class="footer-box">
+        <h3>Contact Us</h3>
+        <div class="contact-us">
+            <span><i class='bx bxs-map' ></i>556, Hebbal Industrial Area, Mysuru</span>
+            <span><i class='bx bxs-phone' ></i>+91 4540039122</span>
+            <span><i class='bx bxs-envelope' ></i>coffeehaven@gmail.com</span>
+        </div>
+    </div>
+</section>
+<script src="app.js"></script>
+
+</body>
+</html>
